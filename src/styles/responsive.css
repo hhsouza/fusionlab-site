@@ -273,3 +273,28 @@
     text-align: center;
   }
 }
+/* ===========================
+   STATS MOBILE
+=========================== */
+
+@media (max-width:768px){
+
+  .stats{
+    display:grid;
+    grid-template-columns:1fr !important;
+    gap:22px;
+  }
+
+  .statCard{
+    width:100%;
+    min-height:170px;
+    padding:30px;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+  }
+
+}
