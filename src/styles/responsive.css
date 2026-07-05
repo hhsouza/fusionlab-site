@@ -21,9 +21,36 @@
   }
 
   .processGrid,
-  .trustGrid {
-    grid-template-columns: 1fr 1fr;
-  }
+  @media (max-width:768px){
+
+.trustGrid{
+
+display:grid;
+
+grid-template-columns:1fr !important;
+
+gap:18px;
+
+}
+
+.trustItem{
+
+width:100%;
+
+padding:28px;
+
+}
+.trust h2{
+
+font-size:42px;
+
+line-height:1;
+
+letter-spacing:-2px;
+
+}
+
+}
 }
 
 @media (max-width: 700px) {
@@ -272,29 +299,4 @@
     width: calc(100% - 32px);
     text-align: center;
   }
-}
-/* ===========================
-   STATS MOBILE
-=========================== */
-
-@media (max-width:768px){
-
-  .stats{
-    display:grid;
-    grid-template-columns:1fr !important;
-    gap:22px;
-  }
-
-  .statCard{
-    width:100%;
-    min-height:170px;
-    padding:30px;
-
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-    align-items:center;
-    text-align:center;
-  }
-
 }
