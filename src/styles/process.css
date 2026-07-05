@@ -1,0 +1,55 @@
+.process {
+  width: min(92%, 1200px);
+  margin: auto;
+  padding: 110px 0;
+  position: relative;
+  z-index: 2;
+}
+
+.process h2 {
+  font-size: clamp(44px, 6vw, 78px);
+  line-height: .95;
+  letter-spacing: -3px;
+  margin-bottom: 50px;
+}
+
+.processGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 22px;
+}
+
+.processCard {
+  min-height: 270px;
+  padding: 30px;
+  border-radius: 32px;
+  background: linear-gradient(145deg, rgba(255,255,255,.105), rgba(255,255,255,.035));
+  border: 1px solid rgba(255,255,255,.16);
+  backdrop-filter: blur(18px);
+  position: relative;
+  overflow: hidden;
+}
+
+.processCard::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at top right, rgba(139,92,246,.18), transparent 38%);
+  pointer-events: none;
+}
+
+.processCard span {
+  color: #00e5ff;
+  font-size: 36px;
+  font-weight: 900;
+}
+
+.processCard h3 {
+  font-size: 28px;
+  margin: 42px 0 14px;
+}
+
+.processCard p {
+  color: #b9c3da;
+  line-height: 1.7;
+}

@@ -1,0 +1,151 @@
+.customizer {
+  width: min(92%, 1200px);
+  margin: auto;
+  padding: 110px 0;
+  display: grid;
+  grid-template-columns: .95fr 1.05fr;
+  gap: 30px;
+  position: relative;
+  z-index: 2;
+}
+
+.form,
+.preview {
+  padding: 38px;
+  border-radius: 38px;
+  background: linear-gradient(145deg, rgba(255,255,255,.105), rgba(255,255,255,.035));
+  border: 1px solid rgba(255,255,255,.16);
+  backdrop-filter: blur(18px);
+  position: relative;
+  overflow: hidden;
+}
+
+.form h2 {
+  font-size: clamp(38px, 5vw, 64px);
+  letter-spacing: -2px;
+  margin-bottom: 28px;
+}
+
+label {
+  display: block;
+  font-weight: 900;
+  margin: 18px 0 10px;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 16px;
+  border-radius: 18px;
+  border: 1px solid rgba(255,255,255,.14);
+  background: rgba(2,6,23,.86);
+  color: white;
+  outline: none;
+  font-size: 16px;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  border-color: #00e5ff;
+  box-shadow: 0 0 0 4px rgba(0,229,255,.12);
+}
+
+textarea {
+  height: 130px;
+  resize: none;
+}
+
+.full {
+  width: 100%;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.mock {
+  height: 290px;
+  border-radius: 34px;
+  background:
+    radial-gradient(circle at center, var(--productColor), transparent 42%),
+    linear-gradient(145deg, rgba(255,255,255,.13), rgba(255,255,255,.035));
+  border: 1px solid rgba(255,255,255,.15);
+  display: grid;
+  place-items: center;
+  position: relative;
+  margin-bottom: 24px;
+  box-shadow:
+    0 0 80px color-mix(in srgb, var(--productColor) 35%, transparent),
+    inset 0 0 50px rgba(255,255,255,.05);
+  animation: productPreviewFloat 4s ease-in-out infinite;
+}
+
+.mock span {
+  font-size: 100px;
+  filter: drop-shadow(0 20px 30px rgba(0,0,0,.4));
+}
+
+.mock strong {
+  position: absolute;
+  bottom: 42px;
+  font-size: 28px;
+  letter-spacing: 3px;
+}
+
+.mock small {
+  position: absolute;
+  top: 25px;
+  right: 28px;
+  color: #00e5ff;
+  font-weight: 900;
+}
+
+pre {
+  min-height: 210px;
+  white-space: pre-wrap;
+  padding: 22px;
+  border-radius: 22px;
+  background: rgba(2,6,23,.9);
+  border: 1px solid rgba(255,255,255,.1);
+  color: #e5e7eb;
+  line-height: 1.7;
+}
+.colorPicker {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+  margin-bottom: 8px;
+}
+
+.colorDot {
+  width: 44px;
+  height: 44px;
+  border-radius: 999px;
+  border: 3px solid rgba(255,255,255,.25);
+  cursor: pointer;
+  transition: .25s ease;
+}
+
+.colorDot:hover {
+  transform: translateY(-4px) scale(1.08);
+}
+
+.colorDot.active {
+  outline: 3px solid #00e5ff;
+  outline-offset: 4px;
+}
+input,
+textarea,
+select{
+
+transition:.25s;
+
+}
+
+input:hover,
+textarea:hover,
+select:hover{
+
+border-color:#00e5ff;
+
+}

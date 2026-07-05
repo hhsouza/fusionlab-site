@@ -1,0 +1,54 @@
+.floatingTikTok {
+  position: fixed;
+  right: 24px;
+  bottom: 24px;
+  z-index: 200;
+
+  padding: 14px 22px;
+  border-radius: 999px;
+
+  background: linear-gradient(135deg, #00e5ff, #8b5cf6, #ec4899);
+  color: white;
+  font-weight: 900;
+  text-decoration: none;
+
+  box-shadow: 0 25px 80px rgba(0,229,255,.3);
+  transition: .3s ease;
+}
+
+.floatingTikTok:hover {
+  transform: translateY(-6px) scale(1.05);
+}
+
+.footer {
+  width: min(92%, 1200px);
+  margin: auto;
+  padding: 70px 0;
+  text-align: center;
+
+  border-top: 1px solid rgba(255,255,255,.12);
+
+  position: relative;
+  z-index: 2;
+}
+
+.footerLogo {
+  font-size: 34px;
+  font-weight: 900;
+  letter-spacing: -1px;
+  margin-bottom: 14px;
+}
+
+.footerLogo span {
+  color: #00e5ff;
+}
+
+.footer p {
+  color: #b9c3da;
+  margin-bottom: 16px;
+}
+
+.footer a {
+  color: #00e5ff;
+  font-weight: 900;
+}

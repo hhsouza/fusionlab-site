@@ -1,0 +1,85 @@
+.loader {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background:
+    radial-gradient(circle at center,
+    rgba(0,229,255,.22),
+    transparent 35%),
+    #02030a;
+
+  animation: loaderExit .8s ease forwards;
+  animation-delay: 2.2s;
+}
+
+.loader-content{
+    text-align:center;
+}
+
+.loader-content h1{
+
+font-size:clamp(60px,8vw,100px);
+
+letter-spacing:-4px;
+
+font-weight:900;
+
+margin-bottom:18px;
+
+}
+
+.loader-content span{
+
+color:#00e5ff;
+
+}
+
+.loader-content p{
+
+color:#94a3b8;
+
+letter-spacing:3px;
+
+text-transform:uppercase;
+
+font-size:12px;
+
+margin-bottom:25px;
+
+}
+
+.loader-bar{
+
+width:300px;
+
+height:6px;
+
+background:rgba(255,255,255,.12);
+
+border-radius:999px;
+
+overflow:hidden;
+
+}
+
+.loader-bar div{
+
+height:100%;
+
+background:linear-gradient(
+90deg,
+#00e5ff,
+#8b5cf6,
+#ec4899
+);
+
+animation:loadBar 2s forwards;
+
+transform:translateX(-100%);
+
+}

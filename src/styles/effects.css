@@ -1,0 +1,62 @@
+.tilt{
+
+transform-style:preserve-3d;
+
+transition:
+
+transform .2s ease,
+
+box-shadow .3s ease,
+
+border-color .3s ease;
+
+}
+
+.tilt:hover{
+
+box-shadow:
+
+0 35px 90px rgba(0,229,255,.15);
+
+}
+
+.btn{
+
+transition:
+
+.35s ease;
+
+}
+
+.btn:hover{
+
+transform:
+
+translateY(-6px)
+scale(1.04);
+
+box-shadow:
+
+0 25px 70px rgba(0,229,255,.25);
+
+}
+
+.ghost{
+
+background:
+
+rgba(255,255,255,.08);
+
+border:
+
+1px solid rgba(255,255,255,.16);
+
+box-shadow:none;
+
+}
+
+.cursorGlow{
+
+mix-blend-mode:screen;
+
+}

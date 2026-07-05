@@ -1,0 +1,45 @@
+.page {
+  min-height: 100vh;
+  overflow-x: hidden;
+  background:
+    radial-gradient(circle at 20% 10%, rgba(139, 92, 246, 0.35), transparent 30%),
+    radial-gradient(circle at 80% 20%, rgba(0, 229, 255, 0.28), transparent 28%),
+    radial-gradient(circle at 50% 90%, rgba(236, 72, 153, 0.18), transparent 32%),
+    #03040a;
+  position: relative;
+}
+
+.cursorGlow {
+  position: fixed;
+  width: 420px;
+  height: 420px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(0, 229, 255, 0.18), transparent 70%);
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  z-index: 0;
+}
+
+.animatedGrid {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  background-image:
+    linear-gradient(rgba(0, 229, 255, 0.06) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0, 229, 255, 0.06) 1px, transparent 1px);
+  background-size: 70px 70px;
+  mask-image: radial-gradient(circle at center, black, transparent 75%);
+  animation: gridMove 18s linear infinite;
+}
+html{
+
+scroll-behavior:smooth;
+
+}
+
+body{
+
+overflow-x:hidden;
+
+}

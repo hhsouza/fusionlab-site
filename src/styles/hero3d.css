@@ -1,0 +1,157 @@
+.visual {
+  height: 560px;
+  position: relative;
+  transform-style: preserve-3d;
+  perspective: 1200px;
+  z-index: 2;
+  animation: heroFloat 7s ease-in-out infinite;
+}
+
+.cube {
+  width: 280px;
+  height: 280px;
+
+  position: absolute;
+  left: 50%;
+  top: 50%;
+
+  transform: translate(-50%, -50%);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 125px;
+
+  border-radius: 46px;
+
+  background:
+    linear-gradient(145deg, rgba(255,255,255,.16), rgba(255,255,255,.035));
+
+  border: 1px solid rgba(255,255,255,.18);
+
+  backdrop-filter: blur(22px);
+
+  box-shadow:
+    0 0 140px rgba(0,229,255,.26),
+    0 40px 120px rgba(0,0,0,.55),
+    inset 0 0 60px rgba(255,255,255,.08);
+
+  animation:
+    cubeRotate 12s linear infinite,
+    cubePulse 4s ease-in-out infinite;
+}
+
+.card {
+  position: absolute;
+  padding: 22px 26px;
+
+  border-radius: 26px;
+
+  background:
+    linear-gradient(145deg, rgba(255,255,255,.12), rgba(255,255,255,.04));
+
+  border: 1px solid rgba(255,255,255,.16);
+
+  backdrop-filter: blur(18px);
+
+  font-weight: 900;
+
+  box-shadow:
+    0 30px 90px rgba(0,0,0,.38);
+
+  color: white;
+}
+
+.card1 {
+  top: 80px;
+  left: 0;
+  animation: float 5s ease-in-out infinite;
+}
+
+.card2 {
+  right: 0;
+  bottom: 95px;
+  animation: float 4.5s ease-in-out infinite reverse;
+}
+.productModel {
+  width: 320px;
+  height: 320px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.modelRing {
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  border: 1px solid rgba(0,229,255,.28);
+  animation: ringSpin 10s linear infinite;
+}
+
+.modelRing::before {
+  content: "";
+  position: absolute;
+  inset: 35px;
+  border-radius: 50%;
+  border: 1px solid rgba(139,92,246,.35);
+}
+
+.modelObject {
+  position: absolute;
+  inset: 45px;
+  border-radius: 42px;
+  background:
+    linear-gradient(145deg, rgba(255,255,255,.18), rgba(255,255,255,.035));
+  border: 1px solid rgba(255,255,255,.18);
+  backdrop-filter: blur(22px);
+  display: grid;
+  place-items: center;
+  box-shadow:
+    0 0 140px rgba(0,229,255,.28),
+    0 40px 120px rgba(0,0,0,.55),
+    inset 0 0 60px rgba(255,255,255,.08);
+  animation: modelFloat 4s ease-in-out infinite;
+}
+
+.modelObject span {
+  font-size: 70px;
+  font-weight: 950;
+  letter-spacing: -4px;
+  background: linear-gradient(135deg, #00e5ff, #8b5cf6, #ec4899);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+.fakeCube3D {
+  width: 150px;
+  height: 150px;
+  position: relative;
+  transform-style: preserve-3d;
+  transform: rotateX(-18deg) rotateY(35deg);
+  animation: fakeCubeSpin 8s linear infinite;
+}
+
+.cubeFace {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  border-radius: 28px;
+  border: 1px solid rgba(255,255,255,.2);
+}
+
+.cubeFace.front {
+  background: linear-gradient(145deg, rgba(0,229,255,.45), rgba(139,92,246,.25));
+  transform: translateZ(75px);
+}
+
+.cubeFace.side {
+  background: linear-gradient(145deg, rgba(139,92,246,.4), rgba(236,72,153,.25));
+  transform: rotateY(90deg) translateZ(75px);
+}
+
+.cubeFace.top {
+  background: linear-gradient(145deg, rgba(255,255,255,.28), rgba(0,229,255,.18));
+  transform: rotateX(90deg) translateZ(75px);
+}

@@ -1,0 +1,110 @@
+.hero {
+
+  width:min(92%,1200px);
+
+  margin:auto;
+
+  min-height:calc(100vh - 120px);
+
+  display:grid;
+
+  grid-template-columns:1.1fr .9fr;
+
+  align-items:center;
+
+  gap:70px;
+
+}
+
+.heroText{
+
+  position:relative;
+
+  z-index:2;
+
+}
+
+.tag{
+
+  color:#00e5ff;
+
+  text-transform:uppercase;
+
+  letter-spacing:3px;
+
+  font-weight:800;
+
+  font-size:13px;
+
+  margin-bottom:20px;
+
+}
+
+.splitTitle{
+
+  display:flex;
+
+  flex-wrap:wrap;
+
+  gap:0 18px;
+
+  font-size:clamp(62px,8vw,118px);
+
+  line-height:.88;
+
+  font-weight:900;
+
+  letter-spacing:-6px;
+
+  margin-bottom:28px;
+
+}
+
+.splitTitle span:last-child{
+
+background:linear-gradient(
+135deg,
+#00e5ff,
+#8b5cf6,
+#ec4899
+);
+
+-webkit-background-clip:text;
+
+color:transparent;
+
+}
+
+.heroText p{
+
+max-width:620px;
+
+font-size:20px;
+
+line-height:1.8;
+
+color:#b9c3da;
+
+margin-bottom:35px;
+
+}
+
+.buttons{
+
+display:flex;
+
+gap:16px;
+
+flex-wrap:wrap;
+
+}
+.heroText,
+.visual {
+  transition: transform .12s linear, opacity .12s linear;
+  will-change: transform, opacity;
+}
+.splitTitle{
+
+text-wrap:balance;
+
+}
